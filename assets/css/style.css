@@ -78,9 +78,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
   z-index: 997;
   transition: all 0.5s;
-  /* background: #141823; */
-  background: transparent;
-  /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); */
+  background: #72448d;
+  /* background: transparent; */
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
 #header.header-scrolled {
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
   padding: 0;
-  max-height: 26px;
+  max-height: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -139,14 +139,18 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 15px 10px 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #6a5ddb;
+  color: #fff;
+  margin: 0 5px;
+  /* border: 1px solid #72448d; */
   font-weight: 500;
   white-space: nowrap;
   transition: 0.3s;
 }
+
+
 
 .navbar a i {
   font-size: 12px;
@@ -155,7 +159,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #b182ef;
+  color: #ff8b85;
+  /* border: 1px solid #fff; */
 }
 
 .navbar .dropdown ul {
@@ -332,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero2 {
   width: 100%;
   height: 100vh;
-
+  margin-top: 5rem;
   position: relative;
   background: url('https://res.cloudinary.com/aniboom-ma/image/upload/v1618884349/Trust_us_with_your_skin_care_12_b063649f-624c-4d37-a763-30f1520765f6_jlfs2h.png') center top no-repeat;
   background-size: cover;
@@ -366,6 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero2 .hero-img {
   width: 50%;
+  opacity: .5;
   float: right;
 }
 @media (max-width: 991px) {
@@ -418,16 +424,34 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 #hero2 .hero-info h2 {
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.425);
   margin-bottom: 40px;
-  font-size: 48px;
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 15px;
   font-weight: 700;
 }
+/* GSAP Typewriter animation css */
+
+/* .line-1 {
+ /* width: 50.18em; */
+ /* border-right: 2px solid rgba(255,255,255,.75);
+ white-space: nowrap; */
+ /* overflow: hidden;
+ /* -webkit-box-sizing:content-box;
+ box-sizing:content-box; */
+/* } */ 
+
+/* .anim-typewriter {
+  width: 0;
+/* }  */
 
 
 #hero .hero-info h2 span {
@@ -480,20 +504,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #72448d;
+  border: 2px solid #72448d;
   color: #fff;
 }
 
 #hero2 .hero-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #72448d;
+  border: 2px solid #72448d;
   color: #fff;
 }
 
 
 #hero .hero-info .btn-get-started:hover {
-  background: none;
+  background: rgba(0, 0, 0, 0.479);
   border-color: #fff;
   color: #fff;
 }
@@ -516,17 +540,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #hero .hero-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
+  background: #996de8;
+  border-color: #996de8;
   color: #fff;
 }
 
 
 #hero2 .hero-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
+  background: #ff8b85;
+  border-color: #e37d77;
   color: #fff;
 }
+
+
 
 /*--------------------------------------------------------------
 # Sections
