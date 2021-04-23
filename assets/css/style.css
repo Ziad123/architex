@@ -682,6 +682,7 @@ section {
 
 #about .about-container p {
   line-height: 26px;
+  font-size: 0.95rem;
 }
 
 #about .about-container p:last-child {
@@ -707,6 +708,17 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+#about .about-container .icon-box .icon.canada, #about .about-container .icon-box .icon.hand-picked {
+  border: 2px solid #d31414;
+}
+#about .about-container .icon-box .icon.botanic {
+  border: 2px solid rgb(8, 146, 54);
+}
+
+#about .about-container .icon-box .icon.cruelty {
+  border: 2px solid #EB9682 ;
+}
+
 #about .about-container .icon-box .icon i {
   color: #007bff;
   font-size: 24px;
@@ -715,6 +727,14 @@ section {
 
 #about .about-container .icon-box:hover .icon {
   background: #007bff;
+}
+
+#about .about-container .icon-box:hover .icon.canada {
+  background:none;
+}
+
+#about .about-container .icon-box:hover .icon.botanic {
+  background: green;
 }
 
 #about .about-container .icon-box:hover .icon i {
