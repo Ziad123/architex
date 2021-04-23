@@ -438,7 +438,31 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   font-weight: 700;
 }
-/* GSAP Typewriter animation css */
+/*  Typewriter animation css */
+
+
+#typewriter:after {
+  content: "|";
+  -webkit-animation: blink 500ms linear infinite alternate;
+          animation: blink 500ms linear infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* .line-1 {
  /* width: 50.18em; */
@@ -490,6 +514,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
+
+.btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
 #hero2 .hero-info .btn-get-started, #hero2 .hero-info .btn-services {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -509,6 +558,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.btn-get-started {
+  background: #72448d;
+  border: 2px solid #72448d;
+  color: #fff;
+}
+
 #hero2 .hero-info .btn-get-started {
   background: #72448d;
   border: 2px solid #72448d;
@@ -520,6 +575,13 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.479);
   border-color: #fff;
   color: #fff;
+}
+
+.btn-get-started:hover {
+  background: #FFF;
+  border-color: #72448d;
+  color: #72448d;
+  cursor: pointer;
 }
 
 
@@ -540,6 +602,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #hero .hero-info .btn-services:hover {
+  background: #996de8;
+  border-color: #996de8;
+  color: #fff;
+}
+
+.btn-services:hover {
   background: #996de8;
   border-color: #996de8;
   color: #fff;
@@ -758,8 +826,14 @@ section {
   font-size: 14px;
 }
 
+.about-extra img {
+  max-height: 380px;
+  margin: 0 5rem;
+}
+
 #about .about-extra {
   padding-top: 60px;
+  margin-top: 5rem;
 }
 
 #about .about-extra h4 {
@@ -777,9 +851,9 @@ section {
 #services .box {
   padding: 30px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0 10px 40px 25px;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
@@ -791,13 +865,12 @@ section {
 
 #services .icon {
   position: absolute;
-  left: -15px;
-  top: calc(50% - 32px);
+  left: -46px;
+  top: calc(50% - 50px);
 }
 
-#services .icon i {
-  font-size: 64px;
-  line-height: 0;
+#services .icon img {
+  
   transition: 0.5s;
 }
 
@@ -812,9 +885,23 @@ section {
   color: #111;
 }
 
+
+#services .box:hover .title.gin a {
+  color:rgb(7, 133, 49);
+}
+
+#services .box:hover .title.margarita a {
+  color: rgb(231, 43, 43);
+}
+
+#services .box:hover .title.tequila a {
+  color: rgb(219, 219, 23) !important;
+}
+
 #services .box:hover .title a {
   color: #007bff;
 }
+
 
 #services .description {
   font-size: 14px;
@@ -825,7 +912,7 @@ section {
 
 #why-us {
   padding: 60px 0;
-  background: #004a99;
+  background: #72448d;
 }
 
 #why-us .section-header h3, #why-us .section-header p {
@@ -833,8 +920,8 @@ section {
 }
 
 #why-us .card {
-  background: #00458f;
-  border-color: #00458f;
+  background: #58346d;
+  border-color: #72448d;
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
@@ -851,8 +938,8 @@ section {
 }
 
 #why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
+  background: #72448d;
+  border-color: #58346d;
 }
 
 #why-us .card i {
