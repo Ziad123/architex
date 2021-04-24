@@ -128,8 +128,16 @@
 
   let tween = gsap.to('#text', {text: {value: "Here is a new and different way to celebrate happy hour"},
   duration: 6, delay: 1, ease: "none"});
-    
+  
+  // // let rule = CSSRulePlugin.getRule('#header::after');
 
+  // // gsap.to(rule, {duration: 2, cssRule: {left: 10}, repeat: -1});
+
+  // let circles = CSSRulePlugin.getRule('#header::after');
+  // var circleBounce =  gsap.timeline({repeat: -1});
+
+  // circleBounce.to(circles, .7, {cssRule: {right: "-=2", top: "-=2", ease: "Power4.easeInOut"}})
+  //   .to(circles, {cssRule: {right: "+=2", top: '-=2', ease: "Power4.easeInOut"}});
 
   /**
    * Mobile nav toggle
