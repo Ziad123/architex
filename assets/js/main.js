@@ -121,8 +121,9 @@
   });
 
 
-  // GSAP Typewriter animation
+  // GSAP hero image animation
 
+  // gsap.from('.hero-img', {opacity: 0, backgroundPosition: "200px 0", duration: 2, ease: "Power3.easeInOut  "});
 
 
 
