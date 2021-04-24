@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero2 {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin-top: 5rem;
   position: relative;
   background: url('https://res.cloudinary.com/aniboom-ma/image/upload/v1618884349/Trust_us_with_your_skin_care_12_b063649f-624c-4d37-a763-30f1520765f6_jlfs2h.png') center top no-repeat;
@@ -990,13 +990,13 @@ section {
 }
 
 #why-us .card {
-  background: #58346d;
+  background: #ecf5ff;
   border-color: #72448d;
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
   text-align: center;
-  color: #fff;
+  color: #000;
   transition: 0.3s ease-in-out;
   height: 100%;
 }
@@ -1031,11 +1031,11 @@ section {
 #why-us .card p {
   min-height: 110px;
   font-size: 15px;
-  color: #d8eafe;
+  color: #000;
 }
 
 #why-us .card .readmore {
-  color: #fff;
+  color: #000;
   font-weight: 600;
   display: inline-block;
   transition: 0.3s ease-in-out;
