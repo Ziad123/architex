@@ -1012,6 +1012,11 @@ section {
   border-color: #58346d;
 }
 
+#cursor {
+  margin: 0;
+  display: inline-block;
+}
+
 #why-us .card i {
   font-size: 48px;
   padding-top: 15px;
