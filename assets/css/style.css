@@ -38,6 +38,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+
+/* Under development section */
+
+#dev .section-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#dev .section-header h3 {
+  color: #996de8;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -48,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #007bff;
+  background: #e37d77;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -247,6 +260,20 @@ h1, h2, h3, h4, h5, h6 {
   .navbar ul {
     display: none;
   }
+
+}
+
+
+@media (min-width: 300px) {
+  
+  /* Featured image mobile  */
+
+  .about-extra img {
+    max-height: 360px;
+    margin: auto 3vw !important;
+  }
+
+  
 }
 
 .navbar-mobile {
@@ -438,8 +465,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   font-weight: 700;
 }
-/*  Typewriter animation css */
 
+@media (max-width: 300px) {
+  #hero2 .hero-info h2 {
+    font-size: 12px !important;
+    padding: 10px !important;
+
+  }
+}
+
+
+
+/*  Typewriter animation css */
+/* 
 
 #typewriter:after {
   content: "|";
@@ -462,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
   }
 }
-
+ */
 
 /* .line-1 {
  /* width: 50.18em; */
@@ -492,11 +530,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
   #hero .hero-info h2 {
-    font-size: 34px;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   #hero2 .hero-info h2 {
-    font-size: 34px;
+    font-size: 24px;
     margin-bottom: 30px;
   }
 }
@@ -633,10 +671,14 @@ section {
 --------------------------------*/
 .section-header h3 {
   font-size: 36px;
-  color: #283d50;
+  color: #e37d77;
   text-align: center;
   font-weight: 500;
   position: relative;
+}
+
+.section-header.services-header p {
+  text-align: left;
 }
 
 .section-header p {
@@ -645,7 +687,7 @@ section {
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
-  width: 50%;
+  width: 80%;
 }
 
 @media (max-width: 767px) {
@@ -805,6 +847,10 @@ section {
   background: green;
 }
 
+#about .about-container .icon-box:hover .icon.hand-picked {
+  background: none;
+}
+
 #about .about-container .icon-box:hover .icon i {
   color: #fff;
 }
@@ -850,6 +896,7 @@ section {
 
 #services .box {
   padding: 30px;
+  min-height: 192px;
   position: relative;
   /* overflow: hidden; */
   border-radius: 10px;
@@ -947,6 +994,11 @@ section {
   padding-top: 15px;
   color: #bfddfe;
 }
+#why-us .card img {
+  margin: auto;
+  padding-top: 15px;
+
+}
 
 #why-us .card h5 {
   font-size: 22px;
@@ -954,6 +1006,7 @@ section {
 }
 
 #why-us .card p {
+  min-height: 110px;
   font-size: 15px;
   color: #d8eafe;
 }
@@ -963,7 +1016,7 @@ section {
   font-weight: 600;
   display: inline-block;
   transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
+  border-bottom: #ff8b85 solid 2px;
 }
 
 #why-us .card .readmore:hover {
@@ -1011,16 +1064,16 @@ section {
   padding: 6px 20px;
   font-size: 12px;
   line-height: 20px;
-  color: #007bff;
+  color: #e37d77;
   border-radius: 50px;
   text-transform: uppercase;
-  background: #ecf5ff;
+  background: #ffecfb;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  background: #007bff;
+  background: #72448d;
   color: #fff;
 }
 
@@ -1039,6 +1092,10 @@ section {
   position: relative;
   border-radius: 6px;
   margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-wrap img {
+  width: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover img {
@@ -1544,14 +1601,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #00428a;
+  background: #72448d;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #004a99;
+  background: #522d68;
   padding: 60px 0 30px 0;
 }
 
@@ -1571,6 +1628,11 @@ section {
   text-transform: uppercase;
 }
 
+#footer .footer-top .footer-info img {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+
 #footer .footer-top .footer-info p {
   font-size: 13px;
   line-height: 24px;
@@ -1584,7 +1646,7 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #007bff;
+  background: #b182ef;
   color: #fff;
   margin-right: 4px;
   border-radius: 50%;
@@ -1599,7 +1661,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0067d5;
+  background: #e37d77;
   color: #fff;
 }
 
