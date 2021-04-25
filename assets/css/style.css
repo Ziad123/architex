@@ -1107,7 +1107,7 @@ section {
 }
 
 #cursor {
-  color: #72448d;
+  /* color: /#72448d; */
   font-family: 'Dancing Script', cursive;
 
   margin: 0;
