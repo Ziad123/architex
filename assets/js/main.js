@@ -108,14 +108,17 @@
   // Slick Hero Carousel
   $('.wrapper').slick({
     accessibility: true,
+    duration: 1,
+    autoplaySpeed: 4000,
     adaptiveHeight: false,
     arrows: true,
     // dots: true,
-    // autoplay: true,
-    // cssEase: 'ease',
+    autoplay: true,
+    cssEase: 'ease',
     // easing: 'linear',
     lazyLoad: 'ondemand',
-    pauseOnHover: true,
+    mobileFirst: true,
+    fade: true,
     useCss: true,
     zIndex: 1000
   });
@@ -135,7 +138,7 @@
     $('#cursor').hide();
   },duration: 6, delay: 1, ease: "none"});
 
-  let tl2 = gsap.timeline({delay: 2}),
+  let tl2 = gsap.timeline({delay: 4.3}),
     firstBg = document.querySelectorAll('.text__first-bg'),
     secBg = document.querySelectorAll('.text__second-bg'),
     word = document.querySelectorAll('.text__word'),
