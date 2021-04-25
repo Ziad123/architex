@@ -126,12 +126,29 @@
   let tl = gsap.timeline();
   // tl.fromTo()
 
+
+
   // gsap.from('.hero-img', {opacity: 0, backgroundPosition: "200px 0", duration: 2, ease: "Power3.easeInOut  "});
   tl.fromTo('#cursor', {autoAlpha: 0, x: -10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
 
   let tween = gsap.to('#text', {text: {value: "Here is a new and different way to celebrate happy hour"}, onComplete: function() {
     $('#cursor').hide();
   },duration: 6, delay: 1, ease: "none"});
+
+  let tl2 = gsap.timeline({delay: 2}),
+    firstBg = document.querySelectorAll('.text__first-bg'),
+    secBg = document.querySelectorAll('.text__second-bg'),
+    word = document.querySelectorAll('.text__word'),
+    h2 = $('#anim1');
+
+    tl2
+      // .from(word, {x: -100})
+      .to(firstBg, 0.2, {scaleX: 1})
+      .to(secBg, 0.2, {scaleX: 1})
+      .to(word, 0.1, {opacity: 1}, "-=0.1")
+      .to(firstBg, 0.2, {scaleX: 0})
+      .to(secBg, 0.2, {scaleX: 0})
+      .from(h2, 0.9, {y: 20, ease: 'Power4.easeInOut'});
   
   // // let rule = CSSRulePlugin.getRule('#header::after');
 

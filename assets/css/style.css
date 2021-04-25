@@ -372,12 +372,12 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
+  margin-top: 5rem;
   position: relative;
-  background: url("../img/promo-compressed.jpg") center bottom no-repeat;
+  background: url("../img/bg2.jpeg") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 120px 0;
-
+  padding: 100px 0 120px 0;
 }
 #hero2 {
   width: 100%;
@@ -446,8 +446,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-info {
-  width: 50%;
-  float: left;
+  width: 70%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  margin-top: 24vh;
 }
 #hero2 .hero-info {
   width: 50%;
@@ -482,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -547,9 +552,38 @@ h1, h2, h3, h4, h5, h6 {
 /* }  */
 
 
-#hero .hero-info h2 span {
+/* #hero .hero-info h2 span {
   color: #e37d77;
   text-decoration: underline;
+} */
+
+
+.text__word {
+  opacity: 0;
+}
+
+.text__first, .text__second{
+  position: relative;
+}
+
+.text__first-bg, .text__second-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.text__first-bg {
+  background-color: #72448d;
+}
+
+.text__second-bg {
+  background-color: #e37d77;
 }
 
 
