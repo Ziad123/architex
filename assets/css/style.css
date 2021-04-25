@@ -11,6 +11,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+.cursive {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 1.3rem !important;
+}
 
 body {
   background: #fff;
