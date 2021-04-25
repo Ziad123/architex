@@ -123,11 +123,15 @@
 
   // GSAP hero image animation
 
-  // gsap.from('.hero-img', {opacity: 0, backgroundPosition: "200px 0", duration: 2, ease: "Power3.easeInOut  "});
-  gsap.fromTo('#cursor', {autoAlpha: 0, x: -10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
+  let tl = gsap.timeline();
+  // tl.fromTo()
 
-  let tween = gsap.to('#text', {text: {value: "Here is a new and different way to celebrate happy hour"},
-  duration: 6, delay: 1, ease: "none"});
+  // gsap.from('.hero-img', {opacity: 0, backgroundPosition: "200px 0", duration: 2, ease: "Power3.easeInOut  "});
+  tl.fromTo('#cursor', {autoAlpha: 0, x: -10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
+
+  let tween = gsap.to('#text', {text: {value: "Here is a new and different way to celebrate happy hour"}, onComplete: function() {
+    $('#cursor').hide();
+  },duration: 6, delay: 1, ease: "none"});
   
   // // let rule = CSSRulePlugin.getRule('#header::after');
 
