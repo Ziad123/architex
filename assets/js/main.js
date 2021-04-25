@@ -138,7 +138,7 @@
     $('#cursor').hide();
   },duration: 6, delay: 1, ease: "none"});
 
-  let tl2 = gsap.timeline({delay: 4.3}),
+  let tl2 = gsap.timeline({delay: 1}),
     firstBg = document.querySelectorAll('.text__first-bg'),
     secBg = document.querySelectorAll('.text__second-bg'),
     word = document.querySelectorAll('.text__word'),
