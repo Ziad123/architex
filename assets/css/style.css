@@ -1066,8 +1066,8 @@ section {
 }
 
 #services .box {
-  padding: 30px;
-  min-height: 192px;
+  padding: 26px;
+  min-height: 253px;
   position: relative;
   /* overflow: hidden; */
   border-radius: 10px;
@@ -1116,8 +1116,45 @@ section {
   color: rgb(219, 219, 23) !important;
 }
 
+#services .box:hover .title.cosmo a {
+  color: #e37d77;
+}
+#services .box:hover .title.manhattan a {
+  color: indigo;
+}
+#services .box:hover .title.bota a {
+  color: orangered;
+}
+
 #services .box:hover .title a {
   color: #007bff;
+}
+
+#services .action {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#services .action .btn-details {
+  width: 40%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  border-radius: 10px;
+  padding: 5px;
+  background: #1a191b;
+  border: 2px solid #1a191b;
+  color: #fff;
+}
+
+#services .action .btn-details:hover {
+  color: #1a191b;
+  background-color: transparent;
+  border: 2px solid #1a191b;
 }
 
 
@@ -1125,6 +1162,7 @@ section {
   font-size: 14px;
   margin-left: 40px;
   line-height: 24px;
+  min-height: 96px;
   margin-bottom: 0;
 }
 

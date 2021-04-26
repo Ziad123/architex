@@ -105,6 +105,11 @@
     onscroll(document, toggleBacktotop)
   }
 
+  // Initializing the modal 
+
+  // $("#modal-01").animatedModal();
+
+
   // Slick Hero Carousel
   $('.wrapper').slick({
     accessibility: true,
